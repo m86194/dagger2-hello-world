@@ -1,6 +1,5 @@
 /* (Experiment with asciidoc)
-:toc:
-:toc-placement!:
+:toc: macro
 
 = Dagger 2 Hello World
 
