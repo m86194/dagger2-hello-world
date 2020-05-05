@@ -1,3 +1,4 @@
+= Asciidoctor PDF Theming Guide
 Dan Allen <https://github.com/mojavelinux[@mojavelinux]>
 // Settings:
 :idprefix:
