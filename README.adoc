@@ -1,8 +1,8 @@
 /* (Experiment with asciidoc)
-:toc: macro
 
 = Dagger 2 Hello World
-
+:toc: macro
+:!toc-title:
 
 // (Important:  As an experiment Main.java is also a valid markdown file copied unmodified to README.md, so only edit Main.java)
 
