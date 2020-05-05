@@ -1,9 +1,50 @@
+Dan Allen <https://github.com/mojavelinux[@mojavelinux]>
+// Settings:
+:idprefix:
+:idseparator: -
+:toc: macro
+:experimental:
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:!toc-title:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+:window: _blank
+// Aliases:
+:conum-guard-yaml: #
+ifndef::icons[:conum-guard-yaml: # #]
+ifdef::backend-pdf[:conum-guard-yaml: # #]
+:url-fontforge: https://fontforge.github.io/en-US/
+:url-fontforge-scripting: https://fontforge.github.io/en-US/documentation/scripting/
+:url-prawn: http://prawnpdf.org
+
+////
+Topics remaining to document:
+* line height and line height length (and what that all means)
+* title page layout / title page images (logo & background)
+////
+
+[.lead]
+The theming system in Asciidoctor PDF is used to control the layout and styling of the PDF file Asciidoctor PDF generates from AsciiDoc.
+This document describes how the theming system works, how to define a custom theme in YAML, and how to activate the theme when running Asciidoctor PDF.
+
+TIP: The quickest way to create your own theme is to <<Extends,extend the default theme>>.
+This gives you a set of foundation styles to build on and provides a collection of <<Bundled Fonts,bundled fonts>> (which you don't have to redeclare).
+If you want to use your own fonts, you must declare the name and location of each font in the <<Custom Fonts,font catalog>>.
+If you want to combine your own fonts with the bundled fonts, you can either extend the font catalog (by setting `merge: true`) or <<Extending the Font Catalog,redeclare the bundled fonts>> alongside your own.
+
+WARNING: If the theme doesn't specify any fonts (nor are they being inherited), only the built-in (AFM) fonts provided by the PDF reader will be available.
+Using AFM fonts can result in missing functionality and warnings.
+See the <<Built-In (AFM) Fonts>> section to learn more about these limitations.
+
 /* (Experiment with asciidoc)
 
 = Dagger 2 Hello World
-:experimental:
-:toc: preamble
-:!toc-title:
 
 // (Important:  As an experiment Main.java is also a valid markdown file copied unmodified to README.md, so only edit Main.java)
 
