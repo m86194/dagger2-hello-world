@@ -1,7 +1,8 @@
 /* (Experiment with asciidoc)
 
 = Dagger 2 Hello World
-:toc: macro
+:experimental:
+:toc: preamble
 :!toc-title:
 
 // (Important:  As an experiment Main.java is also a valid markdown file copied unmodified to README.md, so only edit Main.java)
