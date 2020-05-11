@@ -1,4 +1,6 @@
-Dan Allen <https://github.com/mojavelinux[@mojavelinux]>
+/* (Experiment with asciidoc)
+= Dagger 2 Hello World
+// (Important:  As an experiment Main.java is also a valid markdown file copied unmodified to README.md, so only edit Main.java)
 // Settings:
 :idprefix:
 :idseparator: -
@@ -42,11 +44,6 @@ WARNING: If the theme doesn't specify any fonts (nor are they being inherited), 
 Using AFM fonts can result in missing functionality and warnings.
 See the <<Built-In (AFM) Fonts>> section to learn more about these limitations.
 
-/* (Experiment with asciidoc)
-
-= Dagger 2 Hello World
-
-// (Important:  As an experiment Main.java is also a valid markdown file copied unmodified to README.md, so only edit Main.java)
 
 This project is a single file Hello World Dagger-2 Maven project for
 Java 8 and later, while also being its own documentation written in AsciiDoc.
