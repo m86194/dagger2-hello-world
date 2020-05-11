@@ -1,3 +1,4 @@
+/*
 = Dagger 2 Hello World
 // (Important:  As an experiment Main.java is also a valid asciidoc file copied unmodified to README.md, so only edit Main.java)
 :toc: macro
